@@ -1,0 +1,24 @@
+{
+  "name": "cocktailrecipe",
+  "version": "1.0.0",
+  "description": "This is a training project for Beans to create a full stack application at NewOrbit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaronBeans/CocktailRecipe.git"
+  },
+  "author": "Sean Barnard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaronBeans/CocktailRecipe/issues"
+  },
+  "homepage": "https://github.com/BaronBeans/CocktailRecipe#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "helmet": "^3.12.1"
+  }
+}
