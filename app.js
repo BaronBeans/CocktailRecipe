@@ -1,6 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const app = express();
+const path = require('path');
 
 app.use(helmet());
 app.use(helmet.contentSecurityPolicy({
@@ -12,7 +13,7 @@ app.use(helmet.contentSecurityPolicy({
 app.use(helmet.referrerPolicy({ policy: 'same-origin' }))
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.sendFile(path.join(__dirname, "app/src/", "index.html"))
 });
 
 app.get('/cocktails', (req, res) => {
@@ -21,6 +22,10 @@ app.get('/cocktails', (req, res) => {
 
 app.get('/ingredients', (req, res) => {
     res.send('Search for an ingredient!')
+});
+
+app.get('/index.js', (req, res) => {
+    res.sendFile(path.join(__dirname, "app/src/", "index.js"))
 });
 
 app.get('*', (req, res) => {
