@@ -1,32 +1,34 @@
-var path = require('path');
+const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './app/src/index.js',
+    entry: './app/src/index.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app/src/index.bundle.js'
     },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js']
+    },
     module: {
         rules: [
             {
-                test: /\.(js|jsx|css)$/,
+                test: /\.(ts|tsx)$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['env', 'react'],
-
-                    }
+                    loader: 'ts-loader',
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    { loader: 'css-loader', options: { importLoaders: 1 } },
+                    // 'postcss-loader'
+                ]
             }
         ],
-        test: /\.css$/,
-        use: [
-            'style-loader',
-            { loader: 'css-loader', options: { importLoaders: 1 } },
-            'postcss-loader'
-        ]
+
     },
     target: 'node'
 };
