@@ -1,5 +1,8 @@
 import * as React from 'react';
 import { Component } from 'react';
+
+import './stylesheets/components/_all.css'
+
 import Header from './components/Header';
 import Cocktails from './components/Cocktails';
 import Ingredients from './components/Ingredients';
@@ -11,8 +14,12 @@ class App extends Component {
         <header>
           <Header />
         </header>
-        <Cocktails />
-        <Ingredients />
+        <div id="#cocktails">
+          <Cocktails />
+        </div>
+        <div id="#ingredients">
+          <Ingredients />
+        </div>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-// import '../stylesheets/components/_cocktails.css';
+import '../stylesheets/components/_cocktails.css';
 
 import cocktails from '../data/cocktails';
 
@@ -18,9 +18,16 @@ class Cocktails extends Component {
                             cocktails.map(cocktail => {
                                 return (
                                     <div key={cocktail.name}>
-                                        <strong>{cocktail.name}{` | `}</strong>
+                                        <strong className="cocktailName">{cocktail.name}{` | `}</strong>
                                         <span>£{cocktail.price}0{` | `}</span>
                                         <span>{cocktail.ingredients}{`, `}</span>
+                                        {/* {cocktail.ingredients.map(ingredients => {
+                                            return (
+                                                <div key={ingredients.name}>
+                                                    <span>{ingredients.name}{`, `}</span>
+                                                </div>
+                                            )
+                                        })} */}
                                     </div>
                                 );
                             })
