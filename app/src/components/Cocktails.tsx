@@ -15,7 +15,7 @@ class Cocktails extends Component {
                 {
                     cocktails.map(cocktail => {
                         return (
-                            <Card name={cocktail.name} ingredients={cocktail.ingredients} image={cocktail.image} url={cocktail.url} />
+                            <Card name={cocktail.name} description={cocktail.description} image={cocktail.image} url={cocktail.url} />
                         )
                     })
                 }
