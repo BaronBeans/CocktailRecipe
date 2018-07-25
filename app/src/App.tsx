@@ -21,6 +21,9 @@ class App extends Component {
         <div id="#ingredients">
           <Ingredients />
         </div>
+        <footer className="footer text-center fixed-bottom">
+          <p>Application created by <a href="https://github.com/BaronBeans" target="_blank">Sean Barnard</a> as a training exercise for <a href="https://neworbit.co.uk/" target="_blank">New Orbit Ltd.</a></p>
+        </footer>
       </div>
     );
   }

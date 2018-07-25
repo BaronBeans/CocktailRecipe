@@ -5,3 +5,11 @@ h1 {
 .bold {
     font-weight: bold;
 }
+
+.footer {
+    background-color: white;
+    width: 100vw;
+}
+.footer p {
+    margin:4px;
+}
