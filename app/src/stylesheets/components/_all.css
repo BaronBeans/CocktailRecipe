@@ -13,3 +13,26 @@ h1 {
 .footer p {
     margin:4px;
 }
+
+.floatLeft {
+    width: 50%;
+    float: left;
+}
+
+.floatRight {
+    width: 50%;
+    float: right;
+}
+
+.featureRight {
+    text-align: right;
+    align-content: right;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.featureLeft {
+    text-align: left;
+    align-content: left;
+    font-weight: bold;
+}
