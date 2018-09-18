@@ -12,6 +12,7 @@ export default [
     {
         name: "Screwdriver",
         url: "screwdriver",
+
         description: "A popular alcoholic highball drink made with orange juice and vodka.",
         price: 6.5,
         ingredients: [
@@ -24,6 +25,7 @@ export default [
     {
         name: "Gin and Tonic",
         url: "gin_and_tonic",
+
         description: "A highball cocktail made with gin and tonic water poured over ice. It is usually garnished with a slice or wedge of lime.",
         price: 7.5,
         ingredients: [

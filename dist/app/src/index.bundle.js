@@ -362,6 +362,18 @@ eval("\r\nvar __extends = (this && this.__extends) || (function () {\r\n    var 
 
 /***/ }),
 
+/***/ "./app/src/components/Card.tsx":
+/*!*************************************!*\
+  !*** ./app/src/components/Card.tsx ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = Object.setPrototypeOf ||\r\n        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nexports.__esModule = true;\r\nvar React = __webpack_require__(/*! react */ \"./app/node_modules/react/index.js\");\r\nvar react_1 = __webpack_require__(/*! react */ \"./app/node_modules/react/index.js\");\r\n__webpack_require__(/*! ../stylesheets/components/_all.css */ \"./app/src/stylesheets/components/_all.css\");\r\n__webpack_require__(/*! ../stylesheets/components/_card.css */ \"./app/src/stylesheets/components/_card.css\");\r\nvar Card = /** @class */ (function (_super) {\r\n    __extends(Card, _super);\r\n    function Card() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    Card.prototype.render = function () {\r\n        return (React.createElement(\"a\", { className: \"col-md-3\", href: '/' + this.props.url },\r\n            React.createElement(\"div\", { className: \"card\" },\r\n                React.createElement(\"img\", { src: this.props.image, alt: this.props.name }),\r\n                React.createElement(\"div\", { className: \"container\" },\r\n                    React.createElement(\"h4\", null, this.props.name),\r\n                    React.createElement(\"ul\", null, this.props.ingredients.map(function (ingredient) { return React.createElement(\"li\", null, ingredient); }))))));\r\n    };\r\n    return Card;\r\n}(react_1.Component));\r\nexports[\"default\"] = Card;\r\n\n\n//# sourceURL=webpack:///./app/src/components/Card.tsx?");
+
+/***/ }),
+
 /***/ "./app/src/components/Cocktails.tsx":
 /*!******************************************!*\
   !*** ./app/src/components/Cocktails.tsx ***!
@@ -467,6 +479,17 @@ eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-load
 
 /***/ }),
 
+/***/ "./app/src/stylesheets/components/_card.css":
+/*!**************************************************!*\
+  !*** ./app/src/stylesheets/components/_card.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../../node_modules/css-loader??ref--5-1!./_card.css */ \"./node_modules/css-loader/index.js??ref--5-1!./app/src/stylesheets/components/_card.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./app/src/stylesheets/components/_card.css?");
+
+/***/ }),
+
 /***/ "./app/src/stylesheets/components/_cocktails.css":
 /*!*******************************************************!*\
   !*** ./app/src/stylesheets/components/_cocktails.css ***!
@@ -528,6 +551,7 @@ eval("exports = module.exports = __webpack_require__(/*! ../../../../node_module
   \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
+
 
 eval("exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".card {\\r\\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);\\r\\n    transition: 0.3s;\\r\\n    border-radius: 5px;\\r\\n    width: 18rem;\\r\\n    height: 30rem;\\r\\n    margin: 3.5% 0;\\r\\n}\\r\\n\\r\\n.card:hover {\\r\\n    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);\\r\\n}\\r\\n\\r\\n.container {\\r\\n    padding: 2px 16px;\\r\\n}\\r\\n\\r\\nimg {\\r\\n    border-radius: 5px 5px 0 0;\\r\\n    max-height: 75%;\\r\\n}\\r\\n\\r\\na:hover {\\r\\n    text-decoration: none;\\r\\n    color: red;\\r\\n}\\r\\n\\r\\n.overflowController {\\r\\n    white-space: nowrap; \\r\\n    overflow: hidden;\\r\\n    text-overflow: ellipsis; \\r\\n}\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./app/src/stylesheets/components/_card.css?./node_modules/css-loader??ref--5-1");
 
