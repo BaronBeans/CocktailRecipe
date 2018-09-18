@@ -3,13 +3,10 @@ const helmet = require('helmet');
 const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
-var ObjectId = require('mongodb').ObjectID;
-var string = require('mongodb').string;
-var number = require('mongodb').number;
 const config = require('./app/src/config/config');
 const Cocktail = require('./app/src/models/Cocktail');
 
-mongoose.connect(isDev ? config.db_dev : config.db);
+mongoose.connect(config.db);
 mongoose.Promise = global.Promise;
 
 app.use(helmet());
