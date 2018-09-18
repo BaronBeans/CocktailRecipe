@@ -1,3 +1,7 @@
+export interface _ingredient {
+    name: string
+}
+
 export default [
     {
         name: "Vodka"
@@ -6,6 +10,45 @@ export default [
         name: "Orange Juice"
     },
     {
-        name: "Something else"
+        name: "Gin"
+    },
+    {
+        name: "Tonic"
+    },
+    {
+        name: "Rum"
+    },
+    {
+        name: "Lime Juice"
+    },
+    {
+        name: "Pineapple Juice"
+    },
+    {
+        name: "Sugar Syrup"
+    },
+    {
+        name: "Grenadine"
+    },
+    {
+        name: "Passoa"
+    },
+    {
+        name: "Passionfruit"
+    },
+    {
+        name: "Apple Juice"
+    },
+    {
+        name: "Campari"
+    },
+    {
+        name: "Vermouth"
+    },
+    {
+        name: "Tia Maria"
+    },
+    {
+        name: "Espresso"
     }
 ];

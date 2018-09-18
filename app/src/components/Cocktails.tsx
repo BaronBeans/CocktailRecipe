@@ -11,11 +11,11 @@ class Cocktails extends Component {
 
     render() {
         return (
-            <div className="row">
+            <div className="row bottomSpacing">
                 {
                     cocktails.map(cocktail => {
                         return (
-                            <Card name={cocktail.name} ingredients={cocktail.ingredients} image={cocktail.image} url={cocktail.url} />
+                            <Card cocktail={cocktail} />
                         )
                     })
                 }

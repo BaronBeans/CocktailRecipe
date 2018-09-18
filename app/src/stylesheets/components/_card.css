@@ -3,8 +3,8 @@
     transition: 0.3s;
     border-radius: 5px;
     width: 18rem;
-    margin: 10%;
     height: 30rem;
+    margin: 3.5% 0;
 }
 
 .card:hover {
@@ -25,7 +25,8 @@ a:hover {
     color: red;
 }
 
-/* .card {
-    width: 18rem;
-    margin: 10px;
-} */
+.overflowController {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
