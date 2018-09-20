@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const CocktailSchema = new mongoose.Schema({
-    name: string,
-    url: string,
-    description: string,
-    price: number,
-    ingredients: [],
-    image: string,
-    rating: number
+    name: String,
+    url: String,
+    description: String,
+    price: Number,
+    ingredients: [String],
+    image: String,
+    rating: Number
 })
