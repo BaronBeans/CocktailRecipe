@@ -7,6 +7,10 @@
     margin: 0 5%;
 }
 
+.redrow {
+    background-color: red;
+}
+
 .bottomSpacing {
     margin-bottom: 5%;
 }

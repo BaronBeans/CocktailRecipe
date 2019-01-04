@@ -5,6 +5,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const config = require('./app/src/config/config');
 const Cocktail = require('./app/src/models/Cocktail');
+const bodyParser = require('body-parser');
 
 mongoose.connect(config.db);
 mongoose.Promise = global.Promise;
@@ -12,6 +13,8 @@ mongoose.Promise = global.Promise;
 app.use(helmet());
 
 app.use(helmet.referrerPolicy({ policy: 'same-origin' }))
+
+app.use(bodyParser.json()); //.urlencoded({ encoded: false }));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "app/src/", "index.html"))
@@ -37,13 +40,13 @@ app.get('/api/cocktails', (req, res, next) => {
       .catch((err) => next(err));
   });
 
-//   app.post('/api/cocktails', function (req, res, next) {
-//       const Cocktail = new Cocktail();
-  
-//       cocktails.save()
-//         .then(() => res.json(cocktails))
-//         .catch((err) => next(err));
-//     });
+  app.post('/api/cocktails', function (req, res, next) {
+      const newCocktail = new Cocktail(req.body);
+    
+      newCocktail.save()
+        .then(() => res.json(newCocktail))
+        .catch((err) => next(err));
+    });
   
 //     app.delete('/api/cocktails/:id', function (req, res, next) {
 //       Cocktail.findOneAndRemove({ _id: req.params.id })

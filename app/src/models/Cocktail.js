@@ -9,3 +9,7 @@ const CocktailSchema = new mongoose.Schema({
     image: String,
     rating: Number
 })
+
+const Cocktail = mongoose.model('Cocktail', CocktailSchema)
+
+module.exports = Cocktail;
