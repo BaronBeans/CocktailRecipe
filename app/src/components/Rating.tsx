@@ -17,23 +17,23 @@ class Rating extends Component<{ rating: number }> {
             case 1:
                 return "0.5 stars";
             case 2:
-                return "1 star";
+                return "";
             case 3:
                 return "1.5 stars";
             case 4:
-                return "2 stars";
+                return "";
             case 5:
                 return "2.5 stars";
             case 6:
-                return "3 stars";
+                return "";
             case 7:
                 return "3.5 stars";
             case 8:
-                return "4 stars";
+                return "";
             case 9:
                 return "4.5 stars";
             case 10:
-                return "5 stars";
+                return "";
             default:
                 return "Nothing";
         }

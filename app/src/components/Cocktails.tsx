@@ -46,9 +46,12 @@ class Cocktails extends Component<{}, { cocktails: Cocktail[] }> {
             <div className="row bottomSpacing">
                 <div className="row">
                     {
-                        this.state.cocktails.map(cocktail => {
+                        cocktails.map(cocktail => {
                             return (
-                                <Card cocktail={cocktail} />
+                                <div>
+                                    <Card cocktail={cocktail} />
+                                    <p>this is a test</p>
+                                </div>
                             )
                         })
                     }

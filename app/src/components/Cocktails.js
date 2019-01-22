@@ -98,7 +98,9 @@ var Cocktails = /** @class */ (function (_super) {
     Cocktails.prototype.render = function () {
         return (React.createElement("div", { className: "row bottomSpacing" },
             React.createElement("div", { className: "row" }, this.state.cocktails.map(function (cocktail) {
-                return (React.createElement(Card_1["default"], { cocktail: cocktail }));
+                return (React.createElement("div", null,
+                    React.createElement(Card_1["default"], { cocktail: cocktail }),
+                    React.createElement("p", null, "this is a test")));
             }))));
     };
     return Cocktails;
